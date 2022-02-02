@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+    <!---Formulario Usuario-->
+        <form>
+            <img id='logo'src='imagen/Pospys.png'>
+            <br>
+            <input type="text" id="name" name="name" placeholder="name" required>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname" required>
+            <input type="text" id="direccion" name="direccion" placeholder="direccion" required>
+            <input type="text" id="contact" name="contact" placeholder="contact" required>
+    <br>
+            <!---Formulario Usuario-->
+    <label>Elija un sabor de helado:
+        <select class="helados" name="helado">
+            <option value="">Opciones</option>
+            <option value="Maracuya">Maracuya</option>
+            <option value="Sandia">Sandia</option>
+            <option value="Kiwi">Kiwi</option>
+            <option value="Durazno">Durazno</option>
+        </select>
+    </label>
+    <br>
+<!--Img- Helado seleccionado-->
+ <img id='img-helado' src=''>  
+<!--Metodo Comprar-->
+<br>
+ <button id='pago'onclick="comprar(); return false;">Comprar</button>
+</form>
+<div id='factura'>
+    <p id='f-name'></p>
+    <p id='f-lastname'></p>
+    <p id='f-direccion'></p>
+    <p id='f-contact'></p>
+    <p id='f-helado'></p>
+    </div>
+ </main>   
+<!--Script Conx-->
+    <script src='main.js'></script>
+</body>
+</html>
